@@ -1,5 +1,5 @@
 const express = require("express");
-const port = 5000;
+const port = 5000 || process.env.PORT;
 const bodyparser = require("body-parser");
 const path = require("path");
 const nodemailer = require("nodemailer");
@@ -58,6 +58,6 @@ app.post("/send_email", function (req, response) {
     response.send("message sent sucuessfully");
   });
 });
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Example app listening on port ${process.env.PORT}`);
 });
