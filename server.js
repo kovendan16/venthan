@@ -37,7 +37,7 @@ app.post("/send_email", function (req, response) {
     service: "gmail",
     port: 587,
     auth: {
-      user: "kovendan16@gmail.com",
+      user: process.env.EMAIL,
       pass: "qnxghfcswxnubean",
     },
   });
