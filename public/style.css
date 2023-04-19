@@ -158,7 +158,8 @@ h2 {
 }
 
 .socials a:hover {
-  color: var(--accent-color);
+  color: #fff;
+  transform: scale(1.5);
   transition: 0.2s linear;
   transition-property: background-color, color;
 }
