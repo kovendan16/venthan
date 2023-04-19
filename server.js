@@ -37,14 +37,14 @@ app.post("/send_email", function (req, response) {
     service: "gmail",
     port: 587,
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASSWORD,
+      user: "kovendan16@gmail.com",
+      pass: "qnxghfcswxnubean",
     },
   });
 
   var mailOptions = {
     //    from: "kovendan16@gmail.com",//
-    to: process.env.EMAIL,
+    to: "kovendan16@gmail.com",
     subject: "from kovendan",
     html: output,
     // cc:"kovendan16@gmail.com",//
