@@ -35,6 +35,7 @@ app.post("/send_email", function (req, response) {
 
   var transporter = nodemailer.createTransport({
     service: "gmail",
+    port: 587,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
@@ -51,7 +52,7 @@ app.post("/send_email", function (req, response) {
 
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
-      console.log(error);
+      console.log(`${error}`);
       return res.send("unable to try later");
     } else {
       console.log("Email Sent: " + info.response);

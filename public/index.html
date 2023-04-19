@@ -15,9 +15,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    //
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    ~
 
     <title>koventhan portfolio</title>
   </head>
@@ -44,11 +41,7 @@
         <!--=============== HEADER SECTION ===============-->
 
         <section class="header">
-          <img
-            class="header-img"
-            src="https://images.pexels.com/photos/2389349/pexels-photo-2389349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
+          <!-- <img class="header-img" src="" alt="koventhan img" />  -->
           <h1>koventhan</h1>
           <h2>Frontend Developer</h2>
           <div class="socials">
@@ -60,7 +53,9 @@
             ></a>
             <a href="#" target="_blank" class="fab fa-github"></a>
           </div>
-          <a href="koventhan CV.pdf" download class="cta">Download PDF</a>
+          <a href="./Copy of CV up- Resume 2023.pdf" download class="cta"
+            >Download PDF</a
+          >
         </section>
 
         <!--=============== CONTENT SECTION ===============-->
@@ -87,10 +82,6 @@
                 <a href="https://github.com/kovendan16" target="_blank">
                   Github:https://github.com/kovendan16</a
                 >
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                consectetur quos fugiat fugit! Officiis, temporibus.
               </p>
             </div>
             <div class="col-2">
@@ -128,7 +119,7 @@
             <div class="col-2 project-list">
               <div class="project-tile">
                 <img
-                  src="https://shots.codepen.io/nietoperq/pen/BaPJqGW-512.webp?version=1674304822"
+                  src="https://kovendan16.github.io/hotel3/img/hero.jpg"
                   alt=""
                 />
                 <div class="overlay">
@@ -138,13 +129,15 @@
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nisi aperiam voluptate accusamus velit omnis.
                     </p>
-                    <a> view here</a>
+                    <a href="https://kovendan16.github.io/hotel3/">
+                      view here</a
+                    >
                   </div>
                 </div>
               </div>
               <div class="project-tile">
                 <img
-                  src="https://shots.codepen.io/nietoperq/pen/GRBOjyV-512.webp?version=1674084446"
+                  src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/11/how-to-write-a-blog-post.jpeg"
                   alt=""
                 />
                 <div class="overlay">
@@ -154,12 +147,16 @@
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nisi aperiam voluptate accusamus velit omnis.
                     </p>
+
+                    <a href="https://github.com/kovendan16/blog-rest-api">
+                      view here</a
+                    >
                   </div>
                 </div>
               </div>
               <div class="project-tile">
                 <img
-                  src="https://shots.codepen.io/nietoperq/pen/dyjWxgX-512.webp?version=1673554073"
+                  src="https://cdn.windowsreport.com/wp-content/uploads/2014/12/set-up-FTP-connection-windows-10.jpg"
                   alt=""
                 />
                 <div class="overlay">
@@ -169,26 +166,32 @@
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nisi aperiam voluptate accusamus velit omnis.
                     </p>
+
+                    <a href="https://github.com/kovendan16/ftp"> view here</a>
                   </div>
                 </div>
               </div>
               <div class="project-tile">
                 <img
-                  src="https://shots.codepen.io/nietoperq/pen/vYagdwo-512.webp?version=1673549480"
+                  src="data:image/png;base64,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"
                   alt=""
                 />
                 <div class="overlay">
                   <div class="project-description">
-                    <h3>Project 4</h3>
+                    <h3>Book my show clone</h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Nisi aperiam voluptate accusamus velit omnis.
                     </p>
+
+                    <a href="https://github.com/kovendan16/book_my_show_react">
+                      view here</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
-            <a href="#">see more...</a>
+            <a href="https://github.com/kovendan16">see more...</a>
           </section>
 
           <!--=============== EXPERIENCE ===============-->
