@@ -20,15 +20,15 @@ app.get("/", (req, res) => {
 });
 
 app.post("/send_email", function (req, response) {
-  const output = `
+  const output = `Message
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
     <ul>  
       <li>Name: ${req.body.name}</li>
       <li>Email: ${req.body.email}</li>
     </ul>
-    <h3>Message:${req.body.Subject}</h3>
-    <h3>Subject:${req.body.Message}</h3>
+    <h3>Message:${req.body.Message}</h3>
+    <h3>Subject:${req.body.Subject}</h3>
   `;
   console.log(req.body);
 
