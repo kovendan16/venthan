@@ -28,7 +28,7 @@ app.post("/send_email", function (req, response) {
       <li>Email: ${req.body.email}</li>
     </ul>
     <h3>Message:${req.body.Subject}</h3>
-    <h3>SUbject:${req.body.Message}</h3>
+    <h3>Subject:${req.body.Message}</h3>
   `;
   console.log(req.body);
 
