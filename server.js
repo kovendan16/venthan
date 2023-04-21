@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/send_email", function (req, response) {
-  const output = `Message
+  const output = `Message 
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
     <ul>  
