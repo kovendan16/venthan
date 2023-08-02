@@ -18,6 +18,12 @@ app.use(express.static("./public"));
 app.get("/", (req, res) => {
   res.sendFile("/index.html", { root: "public" });
 });
+app.get('/sitemap.xml', (req, res) => {
+  const filePath = path.join(__dirname, 'sitemap.xml');
+  res.sendFile(filePath);
+});
+
+
 
 app.post("/send_email", function (req, response) {
   const output = `Message 
