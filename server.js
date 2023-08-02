@@ -23,7 +23,10 @@ app.get('/sitemap.xml', (req, res) => {
   res.sendFile(filePath);
 });
 
-
+app.get('/robots.txt', (req, res) => {
+  const filePath = path.join(__dirname, 'robots.txt');
+  res.sendFile(filePath);
+});
 
 app.post("/send_email", function (req, response) {
   const output = `Message 
