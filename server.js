@@ -46,7 +46,7 @@ app.post("/send_email", function (req, response) {
     port: 587,
     auth: {
       user: "kovendan16@gmail.com",
-      pass: "qnxghfcswxnubean",
+      pass: "mjxfqlsgowugxycx",
     },
   });
 
